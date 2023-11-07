@@ -1,0 +1,169 @@
+<html>
+    <title>
+    Curriculum Jorge
+    </title>
+    <body>
+        <!-- listas desordenadas <ul></ul> -->
+    
+        <h1 id="Datos">Datos Personales</h1>
+        <ul>
+            <li>Nombre: Jorge Hdz</li>
+            <li>Fecha de nacimiento: 18/01/1994</li>
+            <li>Lugar de Nacimiento: Css-Vzla</li>
+        </ul>
+        <h2>Formacion Academica</h2>
+            <ul>
+            <li>1999-2012: Colegio San Ignacio</li>
+            <li>2012-2017: Universidad Metropolitana</li>
+            <li>2017-2019: UPM Agronomia</li>
+            <li>2019-2022: IMF business school</li>
+            </ul>
+        <h3>Experiencia Laboral</h3>
+        <ul>
+            <li>2018-2019: Uber Eats Driver</li>
+            <li>2020-2022: Fudo Investments</li>
+            <li>2022-2023: Real State Agent</li>
+            <li>2023-Now: Full Stack Developer</li>
+        </ul>
+        <!-- #lista ordenada <ol></ol>, si quieres escribir en mayusculas
+             es <ol type="A"</ol>, para letras es <ol type="a"</ol>
+                , para numeros romanos es igual pero con I o i mayuscula 
+                y minuscula -->
+        <h4>Lista Ordenada</h4>
+        <ol>
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+        </ol>
+
+        <!-- la lista ordenada en reversa y con numeros romanos en mayuscula -->
+        <h5>Lista Ordenada en reversa con romanos</h5>
+        <ol type="I" reversed="reversed">
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+        </ol>
+
+        <!-- Las listas de descripvvion se escribrem como<dl></dl>, se usa para una lista de terminos con 0 o mas descripciones cada termino se describe con <dt> y cada descripccion con <dd>, se pueden poner mas de una descripccion-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>HTTP</dt>
+            <dd>HyperText Tranfer Protocol</dd>
+            <dt>URL</dt>
+            <dd>Uniform Resource Locator</dd>
+            <dd>Otra descripccion</dd>
+        </dl>
+
+        <!-- Pueden haber listas dentro de listas  -->
+        <ul>
+            <li>Lista de primer nivel:
+                <li>Lista de primer nivel 2</li>
+                <ul>
+                    <li>Lista de segundo nivel
+                        <li>Lista de segundo nivel 2</li>
+                        <ul>
+                            <li>Lista de tercer nivel
+                                <li>Lista de tercer nivel 2</li>
+                                <ul>
+                                    <li>Lista de cuarto nivel
+                                        <li>Lista de cuarto nivel 2</li>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul> 
+            </li>
+            
+        </ul>
+       <!-- Hipertexto y enlaces, se definen con <a>enlace</a> -->
+
+       <!-- Enlace intradocumental -->
+        
+        <h1><a href="#Datos">Datos Personales</a></h1>
+
+        <!-- Enlace Extradocumental -->
+        <a href="http://www.youtube.com">Ir a youtube</a>¡
+        <br>
+
+        <!-- Lista no despleglable para seleccionar normla o con 
+            comand + click-->
+        <select multiple="muntiple">
+            <option value="HTML">
+                HTML
+            </option>
+            <option value="CSS">
+                CSS
+            </option>
+        </select>
+        <br>
+
+        <!-- Para mostras listas desplegables son subtitulos seleccionables -->
+        <select>
+            <optgroup label="HTML">
+                <option value="tables">Tablas</option>
+                <option value="forms">Formularios</option>
+            </optgroup>
+        </select>    
+
+       <!-- LAbel sirve para crear listas de seleccion donde solo se pueda
+     elegir una opcion, necesita de un for y los inputs -->
+        <form>
+            <label for="html">HTML</label>
+            <input type="radio" name="tema" id="html" />
+            <br>
+            <label for="css">CSS</label>
+            <input type="radio" name="tema" id="CSS" />
+        </form>
+        </br>
+
+        <!-- Fiel set es una etiqueta para agrupar datos como nombre correo etc 
+        el titulo se pone entre <ledend> y </ledend>-->
+        <fieldset>
+            <legend>Perfil</legend>
+                Nombre: <input type="text"><br/>
+                Email: <input type="text"><br/>
+        </fieldset>
+        <!-- Esto es un checkbox donde se pueden chequear todas las casillas -->
+        <fieldset>
+            <legend>Temas</legend>
+                <input type="checkbox">HTML
+                <input type="checkbox">CSS
+        </fieldset>
+
+        <!-- las tablas tambien tiene head, body, y foot acompañados de un t
+        <thead></thead>, <tbody></tbody> y <tfoot></tfoot> -->
+        
+        <table>
+            <thead>
+               <tr> <th>Alumno</th> <th>Nota</th> </tr>
+            </thead>
+            <tbody>
+                <tr> <td>Pepe</td> <td>7,65</td> </tr>
+                <tr> <td>Maria</td> <td>8,54</td> </tr>
+                <tr> <td>Jordi</td> <td>5,55</td> </tr>
+            </tbody>
+            <tfoot>
+                <tr> <th>Media</th> <th>7,25</th> </tr>
+                <tr> <th>Desv. Tipica</th> <th>7,35</th> </tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
