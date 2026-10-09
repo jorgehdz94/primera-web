@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "MiGaraje",
+    "slug": "migaraje",
+    "version": "1.0.0",
+    "description": "Bitácora de mantenimiento para carros y motos: registra todo lo que le hacen en el taller, entiende por qué y recibe recordatorios.",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "migaraje",
+    "userInterfaceStyle": "automatic",
+    "primaryColor": "#EE6A1F",
+    "ios": {
+      "bundleIdentifier": "com.jorgehdz94.migaraje",
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "es",
+        "CFBundleAllowMixedLocalizations": true,
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.jorgehdz94.migaraje",
+      "adaptiveIcon": {
+        "backgroundColor": "#EE6A1F",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "name": "MiGaraje",
+      "themeColor": "#EE6A1F"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#EE6A1F",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120,
+          "dark": {
+            "backgroundColor": "#3B2415",
+            "image": "./assets/images/splash-icon.png"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#EE6A1F"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MiGaraje usa tus fotos para guardar facturas y fotos de las piezas de tus servicios.",
+          "cameraPermission": "MiGaraje usa la cámara para que tomes foto de tus facturas y de las piezas cambiadas."
+        }
+      ],
+      "expo-sharing",
+      "expo-secure-store",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
