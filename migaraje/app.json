@@ -59,7 +59,8 @@
         "expo-image-picker",
         {
           "photosPermission": "MiGaraje usa tus fotos para guardar facturas y fotos de las piezas de tus servicios.",
-          "cameraPermission": "MiGaraje usa la cámara para que tomes foto de tus facturas y de las piezas cambiadas."
+          "cameraPermission": "MiGaraje usa la cámara para que tomes foto de tus facturas y de las piezas cambiadas.",
+          "microphonePermission": false
         }
       ],
       "expo-sharing",
@@ -69,6 +70,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5df95ec7-d0e9-4421-8bf1-b65c42df4a6e"
+      }
+    },
+    "owner": "jorgehdz"
   }
 }
